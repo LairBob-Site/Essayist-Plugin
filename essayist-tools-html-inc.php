@@ -8,8 +8,9 @@ function htmlInclude($atts) {
                 "incdir" => 'test',
                     ), $atts));
 
-    // TODO Add error-checking to filepath / filepath strings
-    // $strIncFileName = dirname(__FILE__) . '/includes/' . $incdir . '/' . $incfile;
+    // TODO 1: Add error-checking to filepath / filepath strings
+    // TODO 2: Add simple ability to determine the current server's domain, and work down to a fixed directory from there
+    // TODO 3: Add the ability to manage the "parent" file path through a WP Admin UI panel
     $strIncFileName = 'http://lairbob.com/essays-html/' . $incdir . '/' . $incfile;
 
     $strIncFile = file_get_contents($strIncFileName);
