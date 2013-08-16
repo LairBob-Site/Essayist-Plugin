@@ -1,22 +1,21 @@
 <?php
 
 /*
-  Plugin Name: Essayist
-  Plugin URI: http://lairbob.com
-  Description: Plugin for constructing essays out of modular components
+  Plugin Name: Fluency Content Architecture
+  Plugin URI: http://fluencymedia.com
+  Description: Plugin for managing modular content within Fluency Media website
   Author: Laurent R.O. Stanevich
   Version: 0.0.1
-  Author URI: http://lairbob.com
+  Author URI: http://fluencymedia.com
  */
 
 // Custom taxonomies need to be registered first, so that the custom objects can be linked to them later
-include_once dirname(__FILE__) . '/essayist-custom-taxonomies.php';
+include_once dirname(__FILE__) . '/fm-content-custom-taxonomies.php';
 
-include_once dirname(__FILE__) . '/essayist-cp-citation.php';
-include_once dirname(__FILE__) . '/essayist-cp-data-point.php';
-include_once dirname(__FILE__) . '/essayist-tools-html-inc.php';
-include_once dirname(__FILE__) . '/essayist-page-structure.php';
-include_once dirname(__FILE__) . '/essayist-nav-widget.php';
+include_once dirname(__FILE__) . '/fm-content-cp-citation.php';
+include_once dirname(__FILE__) . '/fm-content-tools-html-inc.php';
+include_once dirname(__FILE__) . '/fm-content-page-structure.php';
+include_once dirname(__FILE__) . '/fm-content-nav-widget.php';
 
 function signOffText() {
     return 'Thank you so much for reading! And remember to subscribe to our RSS feed. ';
